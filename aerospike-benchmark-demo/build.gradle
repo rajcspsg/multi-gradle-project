@@ -12,3 +12,7 @@ repositories {
 apply plugin: 'me.champeau.gradle.jmh'
 
 evaluationDependsOn(':aerospike-demo')
+
+dependencies {
+    compile group:'org.springframework.boot', name:'spring-boot-starter-data-jpa', version:'1.5.4.RELEASE'
+}
