@@ -1,0 +1,26 @@
+group 'multi-gradle-project'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+subprojects {
+    apply plugin: 'java'
+    repositories {
+        mavenCentral()
+    }
+}
+
+project(':aerospike-benchmark-demo') {
+    dependencies {
+        compile project(':aerospike-demo')
+    }
+    /*task jmh (dependsOn: ":aerospike-demo: build")<< {
+        println "Task name is $name"
+    }*/
+}
+
+
+

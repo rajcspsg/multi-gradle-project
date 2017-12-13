@@ -1,0 +1,14 @@
+plugins {
+    id "me.champeau.gradle.jmh" version "0.4.3"
+}
+
+group 'multi-gradle-project'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'me.champeau.gradle.jmh'
+
+evaluationDependsOn(':aerospike-demo')

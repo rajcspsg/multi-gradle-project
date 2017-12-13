@@ -1,0 +1,4 @@
+rootProject.name = 'multi-gradle-project'
+
+include 'aerospike-demo', 'aerospike-benchmark-demo'
+
